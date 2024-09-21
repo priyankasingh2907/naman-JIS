@@ -31,12 +31,28 @@ body{
 .perSmartBoheadRgt a{
 padding-right: 0;
 }
-
+.customSliderHead .orgLink {
+    padding-right: 0;
+    color: #fff;
+}
+.perSmartBoheadRgt {
+    text-align: left;
+    padding-top: 10px;
+    padding-right: 30px;
+    text-align: center;
+}
 .customSliderHead .orgLink {
     padding-right: 200px;
     color: #fff;
 }
-
+.newProfInfoTwo {
+    display: flex;
+    margin: 30px 0;
+}
+.container{
+    max-width: none;
+    padding:0px;
+}
  .srow{
         display: flex;
         justify-content: space-between;
