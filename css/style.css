@@ -3,15 +3,29 @@ body{
     object-fit: fill;
 }
 .scontainer{
-    width: 100vw;
-    height: 60vh;
+   
     background: linear-gradient(to bottom, #ffffff 0%, #daf9fe 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
-
+.newProfInfoTwoPhoto img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.newProfilesInfoPhoto img{
+    border-radius: 5px;
+}
+.newProfInfoTwoInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .ourWork{
     display: flex;
     flex-direction: column;
