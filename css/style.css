@@ -1,0 +1,162 @@
+body{
+    font-family: 'PoppinsRegular'!important;
+    object-fit: fill;
+}
+.scontainer{
+    width: 100vw;
+    height: 60vh;
+    background: linear-gradient(to bottom, #ffffff 0%, #daf9fe 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.ourWork{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.perfSmartIcon img{
+    width: 100px;
+}
+
+.title1{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+.perSmartBoheadRgt a{
+padding-right: 0;
+}
+
+.customSliderHead .orgLink {
+    padding-right: 200px;
+    color: #fff;
+}
+
+ .srow{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .col1 ,.col2 ,.c0l3{
+        width: 33vw;
+    }
+    .col1 .img img{
+        width: 60%;
+        height: 60%;
+        object-fit: fill;
+        padding-left: 20px;
+        /* border: 1px solid black; */
+    }
+    .col2  {
+        /* border: 1px solid black; */
+        overflow: hidden;
+        /* text-align: center; */
+        /* padding: 15px; */
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        font-weight: 300;
+
+
+        /* margin: 10px; */
+    }
+    .col3 .box{
+        padding: 20px;
+        margin: 15px;
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+.col2 .scontent h3 {
+    color: #021526;
+
+}
+    .col2 .scontent p{
+        color:rgb(60, 61, 63) ;
+
+
+    }
+
+    .col3 .box h2{
+        color: black;
+    }
+    .ticker-container {
+        background-color: #ffffff;
+        padding: 5px;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 15px;
+    }
+    @media (max-width: 1199px) {
+        section, .section {
+            scroll-margin-top: 100px;
+        }
+    }
+.ticker-container{
+    background-color: #ffffff;
+    padding: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+.ticker-wrapper {
+    display: flex;
+    animation: ticker-animation 40s linear infinite;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: ticker-animation;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+}
+@keyframes ticker-animation{
+0%{
+    transform: translateX(100%);
+}
+100%{
+    transform: translateX(-100%);
+
+}
+}
+.ticker-para{
+    color: #1232a5;
+    font-weight: 500;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    margin-top: 0;
+    margin-bottom: 1rem;
+
+}
+    .ticker-item {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        color: #1232a5;
+        font-weight: 500;
+    }
+
+
+    .ticker-item img {
+        margin-right: 10px;
+        width: 50px;
+        height: 24px;
+        margin-bottom: 10px;
+    }
+    
+    img, svg {
+        vertical-align: middle;
+    }

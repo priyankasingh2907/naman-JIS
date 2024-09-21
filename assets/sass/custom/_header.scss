@@ -1,0 +1,280 @@
+.header-section{
+    .header-top{
+        padding: 0.425rem 0;
+        #accessibility{
+            ul{
+                padding: 0;
+                margin: 0;
+                text-align: right;
+                li{
+                    list-style: none;
+                    position: relative;
+                    display: inline-block;
+                    margin: 0 -2px;
+                    a{
+                        display: inline-block;
+                        color: $baseColor;
+                        padding: 0 0.5rem;
+                        font-size: 1rem;
+                        line-height: 1.855rem;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        &.mob-menu{
+                            display: none;
+                        }
+                    }                                               
+                    &.accessible-links{
+                        padding: 0 0.75rem;
+                        ul{
+                            display: flex;
+                            flex-wrap: wrap;
+                            li{
+                                margin: 0 2px 0 0;
+                                a{
+                                    border: 1px solid $baseColor;
+                                    background-color: $white;
+                                    line-height: inherit;
+                                    padding: 0.2rem 0;
+                                    text-align: center;
+                                    width: 22px;
+                                    font-weight: 700;
+                                    color: $baseColor;
+                                }
+                                &:nth-child(3){
+                                    margin: 0 0.5rem 0 0;
+                                }
+                                &.high-contrast{
+                                    margin: 0;
+                                    a{
+                                        border: 1px solid $baseColor;
+                                    }
+                                    &.dark{
+                                        a{
+                                            border-right: none;
+                                            background-color: #000;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.site-lang{
+                        width: 52px;
+                        text-align: center;
+                        &.mFocus{
+                            .lang-opt{
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                        .lang-opt{
+                            position: absolute;
+                            top: 100%;
+                            width: calc(100% + 2px);
+                            left: -1px;
+                            z-index: 100;
+                            visibility: hidden;
+                            opacity: 0;
+                            background-color: $baseColor;
+                            border: 1px solid #d8d8d8;
+                            transition: none;
+                            ul{
+                                display: block;
+                                li{
+                                    display: block;
+                                    border: none;
+                                    text-align: center;
+                                    a{
+                                        line-height: inherit;
+                                        display: block;
+                                        padding: 0.5rem;
+                                        color: #fff;
+                                        transition: none;
+                                        &:hover{
+                                            background-color: $black;
+                                            color: $white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &:hover{
+                            .lang-opt{
+                                opacity: 1;
+                                visibility: visible;                                    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-bottom{
+        background-color: $white;
+    }
+    .navbar{
+        padding: 0;
+        .navbar-brand{
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .header-content-outer{
+        display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        flex-basis: auto;
+        flex-grow: 1;
+        align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        padding-top: 17px;
+        .header-content{
+            flex-direction: row;
+            #accessibility{
+                ul{
+                    padding: 0;
+                    margin: 0;
+                    text-align: right;
+                    li{
+                        list-style: none;
+                        position: relative;
+                        display: inline-block;
+                        margin: 0 -2px;
+                        a{
+                            display: inline-block;
+                            color: #fff;
+                            padding: 0 0.5rem;
+                            font-size: 1rem;
+                            line-height: 1.855rem;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            &.mob-menu{
+                                display: none;
+                            }
+                        }                                               
+                        &.accessible-links{
+                            padding: 0 0.75rem;
+                            ul{
+                                display: flex;
+                                flex-wrap: wrap;
+                                li{
+                                    margin: 0 2px 0 0;
+                                    a{
+                                        border: 1px solid transparent;
+                                        background-color: #fff;
+                                        line-height: inherit;
+                                        padding: 0.2rem 0;
+                                        text-align: center;
+                                        width: 22px;
+                                        font-weight: 700;
+                                        color: #000;
+                                    }
+                                    &:nth-child(3){
+                                        margin: 0 0.5rem 0 0;
+                                    }
+                                    &.high-contrast{
+                                        margin: 0;
+                                        a{
+                                            border: 1px solid #04837a;
+                                        }
+                                        &.dark{
+                                            a{
+                                                border-right: none;
+                                                background-color: #000;
+                                                color: #fff;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.site-lang{
+                            &.mFocus{
+                                .lang-opt{
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                            }
+                            .lang-opt{
+                                position: absolute;
+                                top: 100%;
+                                width: calc(100% + 2px);
+                                left: -1px;
+                                z-index: 100;
+                                visibility: hidden;
+                                opacity: 0;
+                                background-color: #1a938a;
+                                border: 1px solid #d8d8d8;
+                                transition: none;
+                                ul{
+                                    display: block;
+                                    li{
+                                        display: block;
+                                        border: none;
+                                        text-align: center;
+                                        a{
+                                            line-height: inherit;
+                                            display: block;
+                                            padding: 0.5rem;
+                                            color: #fff;
+                                            transition: none;
+                                            &:hover{
+                                                background-color: $black;
+                                                color: $white;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &:hover{
+                                .lang-opt{
+                                    opacity: 1;
+                                    visibility: visible;                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .main-menu{
+                ul{
+                    background-color: $white;
+                    padding: 0.6rem 1.75rem;
+                    margin: 5px 0 0;
+                    border-radius: 2rem;
+                    border: 1px solid $baseColor;
+                    li{
+                        position: relative;
+                        margin: 0 .5rem 0 0;
+                        list-style: none;
+                        &:last-child{
+                            margin: 0;
+                        }
+                        a{
+                            position: relative;
+                            display: block;
+                            color: $baseColor;
+                            padding: 0.4rem 1.8rem;
+                            border-radius: 1.5rem;
+                            font-size: 1.3rem;
+                            text-transform: uppercase;
+                            font-weight: 400;
+                            &:hover{
+                                background-color: $baseColor;
+                                color: $white !important;
+                            }
+                        }
+                        &.current-menu-item{
+                            a{
+                                background-color: $baseColor;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

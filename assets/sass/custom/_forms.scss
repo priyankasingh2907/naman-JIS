@@ -1,0 +1,193 @@
+.site-form{
+    .site-form-row{
+        margin: 4rem 0 2rem;
+        padding: 2.5rem 2rem 1.5rem;
+        position: relative;
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+        .form-head{
+            position: absolute;
+            left: 20px;
+            top: -18px;
+            z-index: 99;
+            .btn-details{
+                border-radius: 5px;
+                text-transform: none;
+                font-size: 1.3rem;
+                font-weight: 700;
+                padding: 0.7rem 1.25rem;
+                background-color: $white;
+            }
+        }
+        
+        label{
+            font-weight: bold;
+            display: block;
+            span{
+                font-weight: 400;
+                font-size: 1rem;
+            }
+            &.form-check-inline{
+                display: inline-flex;
+            }
+        }
+        .form-group{
+            position: relative;
+            .form-control{
+                height: 36px;
+                border-color: $baseColor;
+            }
+            textarea.form-control{
+                resize: none;
+                height: 110px;
+            }
+            .select-option{
+                position: relative;
+                &:after{
+                    font-family: "FontAwesome";
+                    position: absolute;
+                    right: 12px;
+                    top: 8px;
+                    font-size: 1.25rem;
+                    content: '\f0d7';
+                    z-index: 8;
+                }
+                .form-control{
+                    position: relative;
+                    z-index: 10;
+                    background-color: transparent;
+                    -ms-appearance: none;
+                    appearance: none;
+                    cursor: pointer;
+                }
+            }  
+            sup{
+                color: red;
+            }
+            small{
+                position: absolute;
+                bottom: -20px;
+                left: 0;
+                font-size: 1.1rem;
+                width: 100%;
+            }
+        }
+        p{
+            .btn-rss{
+                color: #ff7816;
+                text-decoration: none;
+            }
+            a{
+                text-decoration: underline;
+            }
+        }
+    }
+    .btn-grp{
+        text-align: center;
+        display: block;
+        margin: 2.75rem 0 1.5rem;
+        .btn-details{     
+            color: $black !important;
+            font-weight: 700;   
+            background-color: $white;
+            margin: 0 5px;
+            background: #4ea3fe; /* Old browsers */
+            background: -moz-linear-gradient(left,  #4ea3fe 0%, #4ea3ff 5%, #4ba2ff 6%, #4ca5ff 7%, #42abfe 12%, #3db2ff 18%, #3ab2fe 18%, #34b7ff 21%, #2dbcfe 27%, #2ebfff 28%, #28c0ff 30%, #1fcafe 37%, #04dfff 54%, #03defe 61%, #05e0ff 61%, #03defe 64%, #05e0ff 68%, #03defe 70%, #05e0ff 74%, #03defe 76%, #05e0ff 78%, #03ddff 88%, #05e0ff 92%, #03ddff 95%, #05e0ff 95%, #03defe 96%, #05e0ff 96%, #03defe 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left,  #4ea3fe 0%,#4ea3ff 5%,#4ba2ff 6%,#4ca5ff 7%,#42abfe 12%,#3db2ff 18%,#3ab2fe 18%,#34b7ff 21%,#2dbcfe 27%,#2ebfff 28%,#28c0ff 30%,#1fcafe 37%,#04dfff 54%,#03defe 61%,#05e0ff 61%,#03defe 64%,#05e0ff 68%,#03defe 70%,#05e0ff 74%,#03defe 76%,#05e0ff 78%,#03ddff 88%,#05e0ff 92%,#03ddff 95%,#05e0ff 95%,#03defe 96%,#05e0ff 96%,#03defe 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right,  #4ea3fe 0%,#4ea3ff 5%,#4ba2ff 6%,#4ca5ff 7%,#42abfe 12%,#3db2ff 18%,#3ab2fe 18%,#34b7ff 21%,#2dbcfe 27%,#2ebfff 28%,#28c0ff 30%,#1fcafe 37%,#04dfff 54%,#03defe 61%,#05e0ff 61%,#03defe 64%,#05e0ff 68%,#03defe 70%,#05e0ff 74%,#03defe 76%,#05e0ff 78%,#03ddff 88%,#05e0ff 92%,#03ddff 95%,#05e0ff 95%,#03defe 96%,#05e0ff 96%,#03defe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ea3fe', endColorstr='#03defe',GradientType=1 ); /* IE6-9 */
+            border-radius: 25px;
+            border: 1px solid $baseColor;
+            &:before{
+                content: none;
+            }
+        }
+    }
+}
+
+.form-data-modal{
+    &.edit{
+        .site-form{
+            .site-form-row{
+                padding: 1.5rem 2rem;
+                margin: 1rem 0 2rem;
+            }
+        }    
+    }
+    .modal-dialog{
+        max-width: 750px;
+        .modal-header{
+            text-align: center;
+            overflow: hidden;
+            padding: 0;
+            position: relative;
+            border: none;
+            z-index: 99;
+            padding: 20px 20px 10px;
+            display: block;
+            h2{
+                margin: 0;
+                text-transform: none;
+            }
+            .close{
+                float: none;
+                padding: 0;
+                margin: 0;
+                opacity: 1;
+                float: none;
+                padding: 0;
+                margin: 0;
+                opacity: 1;
+                position: absolute;
+                right: 20px;
+                top: 17px;
+                &:hover{
+                    opacity: 1;
+                }
+                &:focus{
+                    outline: none;
+                }
+                span{
+                    color: #212529;
+                    padding: 4px;
+                    border: 2px solid #212529;
+                    line-height: 12px;
+                    font-size: 2rem;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    display: block;
+                }
+            }
+        }
+        .modal-body{
+            padding: 0 20px 20px;
+            .select-option{
+                margin:2rem 0 -1rem;
+                > label{
+                    margin: 0 1rem 0 0;
+                    position: relative;
+                    top: -2px;
+                }
+                .form-check-input, .form-check-label{
+                    cursor: pointer;
+                }
+            }
+            .site-form{
+                .site-form-row{
+                    .form-group{
+                        textarea.form-control{
+                            resize: none;
+                            height: 60px;
+                        }
+                        .form-control{
+                            height: 30px;
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    
